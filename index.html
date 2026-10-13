@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow" data-publish>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Стойко Строй · Строительство домов и бань</title>
+<meta name="description" content="Дачные дома и бани, в том числе каркасные. Работаем без лишних звонков и попыток изменить цену или срок.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Дома и бани в Сыктывкаре – работаем в срок">
+<meta property="og:description" content="Дачные дома и бани, в том числе каркасные. Работаем без лишних звонков и попыток изменить цену или срок.">
+<meta property="og:image" content="assets/hero.webp">
+<link rel="preload" as="image" href="assets/hero.webp" fetchpriority="high">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Crect x=%276%27 y=%276%27 width=%2720%27 height=%2720%27 rx=%275%27 fill=%27%2382542b%27/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geologica:wght@600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root { --c-canvas: #dfe2e7; --c-surface: #f3f5f6; --c-ink: #241c14; --c-ink-soft: #61564c; --c-accent: #82542b; --c-accent-ink: #f9f5f1; --c-accent-deep: #5c3b1f; --f-display: "Geologica", "Arial", system-ui, sans-serif; --f-text: "IBM Plex Sans", "Segoe UI", system-ui, sans-serif; --h1k: 0.66; }
+</style>
+<link rel="stylesheet" href="style-prod.css">
+<style>
+/* ---- виджет-сотрудник: отвечаем сразу, круглосуточно ------------------- */
+.agent { position: fixed; right: clamp(12px, 2vw, 28px); bottom: clamp(12px, 2.4vh, 28px); z-index: 60;
+  display: flex; align-items: center; gap: 12px; text-decoration: none; color: var(--c-ink); }
+.agent__bubble { display: grid; gap: 2px; padding: 10px 16px; border-radius: 16px 16px 4px 16px;
+  background: var(--c-surface); box-shadow: 0 10px 30px rgb(0 0 0 / .45), 0 0 0 1px rgb(255 255 255 / .08);
+  font-family: var(--f-text); line-height: 1.25; max-width: 15rem;
+  opacity: 0; transform: translateY(8px); animation: agent-in .5s 1.4s cubic-bezier(.2,.7,.2,1) forwards; }
+.agent__bubble b { font-size: .95rem; font-weight: 700; }
+.agent__bubble span { font-size: .8rem; color: var(--c-ink-soft); }
+.agent__photo { position: relative; flex: none; width: 64px; height: 64px; border-radius: 50%;
+  box-shadow: 0 0 0 3px var(--c-accent), 0 10px 26px rgb(0 0 0 / .45); transition: transform .2s ease-out; }
+.agent__photo img { width: 100%; height: 100%; border-radius: 50%; object-fit: cover; display: block; }
+.agent__photo::before { content: ""; position: absolute; inset: -3px; border-radius: 50%; border: 2px solid var(--c-accent);
+  animation: agent-pulse 2.6s ease-out infinite; pointer-events: none; }
+.agent__photo i { position: absolute; right: 1px; bottom: 1px; width: 15px; height: 15px; border-radius: 50%;
+  background: #2fbf5b; box-shadow: 0 0 0 3px var(--c-surface); }
+.agent:hover .agent__photo, .agent:focus-visible .agent__photo { transform: scale(1.05); }
+.agent:focus-visible { outline: 2px solid var(--c-accent); outline-offset: 4px; border-radius: 40px; }
+@keyframes agent-in { to { opacity: 1; transform: none; } }
+@keyframes agent-pulse { 0% { opacity: .8; transform: scale(1); } 70%, 100% { opacity: 0; transform: scale(1.35); } }
+.agent__photo b { display: none; position: absolute; left: 50%; bottom: -9px; transform: translateX(-50%); padding: 1px 6px; border-radius: 8px;
+  background: var(--c-accent); color: var(--c-accent-ink); font: 700 10px/1.4 var(--f-text); white-space: nowrap; }
+@media (max-width: 640px) {
+  .agent { bottom: calc(80px + env(safe-area-inset-bottom)); }
+  .agent__bubble { display: none; }
+  .agent__photo { width: 54px; height: 54px; }
+  .agent__photo i { right: -2px; bottom: auto; top: 0; width: 13px; height: 13px; }
+  .agent__photo b { display: block; }
+}
+.agent { transition: opacity .25s ease-out, transform .25s ease-out; }
+.agent.is-away { opacity: 0; transform: translateY(10px); pointer-events: none; }
+@media (prefers-reduced-motion: reduce) { .agent__bubble { animation: none; opacity: 1; transform: none; } .agent__photo::before { animation: none; opacity: 0; } }
+/* ---- правки Юрия 08.10.2026 --------------------------------------------- */
+/* заголовок первого экрана: слова не переносятся и не рвутся, слова с дефисом не разрываются */
+.s-hero h1 { hyphens: none; -webkit-hyphens: none; overflow-wrap: normal; word-break: normal; }
+.s-hero h1 .nb { white-space: nowrap; }
+/* верхняя шапка (имя компании, телефон, кнопка) крупнее на 25 % */
+.s-bar { padding-top: 12px; padding-bottom: 12px; }
+.s-bar__brand { font-size: 1.25rem; min-height: 48px; }
+.s-bar__tel { font-size: 1.2rem; }
+.s-bar .s-btn--sm { font-size: 1.05rem; min-height: 46px; }
+@media (max-width: 640px) {
+  .s-bar__brand { font-size: 1.15rem; }
+  .s-bar .s-btn--sm { font-size: .98rem; min-height: 44px; padding: 0 1em; }
+}
+</style>
+<style>html{scroll-behavior:smooth}#contacts{scroll-margin-top:84px}.s-jump{color:inherit;text-decoration:none;display:block}.s-ticks .s-jump{display:inline}.s-ticks .s-jump:hover{text-decoration:underline;text-underline-offset:3px}.s-jump__go{display:inline-block;margin-top:10px;font-weight:600;color:var(--c-accent-deep,var(--c-accent))}.s-jump:hover .s-jump__go{text-decoration:underline}</style>
+<style>.s-bar__brand{min-width:0;max-width:52vw;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}</style>
+</head>
+<body class="s-prod" id="top" data-wa="79042218431" data-tg="" data-max="">
+<header class="s-bar" data-s-bar>
+  <a class="s-bar__brand" href="#top"><i aria-hidden="true"></i>Стойко Строй</a>
+  <div class="s-bar__right">
+    <a class="s-bar__tel" href="tel:+79042218431">+7 (904) 221-84-31</a>
+    <a class="s-btn s-btn--sm" href="#widget">Рассчитать смету</a>
+  </div>
+</header>
+<main>
+  <section class="s-hero">
+    <div class="s-hero__text">
+      <p class="s-eyebrow">Дома и бани под ключ · Сыктывкар</p>
+      <h1>Дома и бани в Сыктывкаре – работаем в срок</h1>
+      <p class="s-lead">Дачные дома и бани, в том числе каркасные. Работаем без лишних звонков и попыток изменить цену или срок.</p>
+      <ul class="s-ticks"><li>Дома на дачу и каркасные бани</li><li>Баня каркасная 6×4 с террасой</li><li>Цену и срок не меняем</li></ul>
+      <p class="s-rating"><b>4,1</b> на Яндекс.Картах · 5 отзывов</p>
+      <figure class="s-hero__photo"><img class="" src="assets/hero.webp" alt="Небольшой дом с белым крыльцом и тёплой подсветкой вечером" loading="lazy" decoding="async" style="object-position:50% 50%"></figure>
+    </div>
+    <div class="s-hero__widget" id="widget"><form class="s-widget" data-s-calc data-base="0" data-min="0" data-min-note="минимальный заказ" data-per="{}" data-message="Здравствуйте! Хочу рассчитать смету: {выбор}. Когда можно обсудить проект?" onsubmit="return false">
+      <h2 class="s-widget__title">Рассчитать смету бесплатно</h2>
+      <fieldset><legend>Что строим</legend><div class="s-chips"><label class="s-chip"><input type="radio" name="kind" value="0" data-label="Дом" data-price="0" checked><span>Дом</span></label><label class="s-chip"><input type="radio" name="kind" value="1" data-label="Баня" data-price="0"><span>Баня</span></label></div></fieldset>
+      <div class="s-range"><label for="f-area"><span>Площадь</span><b><output data-s-out="area">24</output> м²</b></label>
+      <input id="f-area" type="range" name="area" min="12" max="100" step="2" value="24" data-price="0" data-label="Площадь" data-unit="м²"></div>
+      <fieldset><legend>Когда планируете</legend><div class="s-chips"><label class="s-chip"><input type="radio" name="when" value="0" data-label="В ближайшие месяцы" data-price="0" checked><span>В ближайшие месяцы</span></label><label class="s-chip"><input type="radio" name="when" value="1" data-label="Через полгода и позже" data-price="0"><span>Через полгода и позже</span></label><label class="s-chip"><input type="radio" name="when" value="2" data-label="Пока присматриваюсь" data-price="0"><span>Пока присматриваюсь</span></label></div></fieldset>
+      <p class="s-total" hidden style="display:none"><span>Смету назовём после обсуждения</span><b data-s-total>–</b></p>
+      <div class="s-bubble" aria-live="polite"><span class="s-bubble__label">Ваше сообщение</span><p data-s-bubble></p></div>
+      <div class="s-send">
+        <a class="s-btn s-btn--wide" data-s-msg="whatsapp" href="#">Отправить расчёт в WhatsApp</a>
+        
+      </div>
+      <p class="s-send__note" data-s-copied hidden>Текст скопирован – вставьте его в чат.</p>
+      
+    </form></div>
+    <figure class="s-hero__bg" aria-hidden="true"><img class="" src="assets/hero.webp" alt="Небольшой дом с белым крыльцом и тёплой подсветкой вечером" decoding="async" style="object-position:50% 50%" fetchpriority="high"></figure>
+  </section>
+
+  
+
+  <section class="s-section s-reveal" id="prices">
+    <header class="s-section__head"><h2>Цены</h2><p>Цены на основные модели. Точную сумму назовём при расчёте сметы.</p></header>
+    <div class="s-board"><div class="s-board__group">
+      <h3 class="s-board__title">Бани</h3>
+      <ul class="s-board__list">
+        <li class="s-board__row"><span class="s-board__name">Каркасная баня 6×4 с террасой 2 м</span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">1 450 000 ₽</span></li>
+      </ul>
+    </div>
+<div class="s-board__group">
+      <h3 class="s-board__title">Дома</h3>
+      <ul class="s-board__list">
+        <li class="s-board__row"><span class="s-board__name">Дома на дачу</span><span class="s-board__dots" aria-hidden="true"></span><span class="s-board__price">уточнить</span></li>
+      </ul>
+    </div></div>
+    <p class="s-note">Напишите или позвоните – обсудим ваш проект и рассчитаем смету.</p>
+  </section>
+
+  <section class="s-section s-reveal">
+    <header class="s-section__head"><h2>Как проходит</h2></header>
+    <ol class="s-steps">
+      <li class="s-steps__item"><span class="s-steps__n">01</span><h3>Выбор бани</h3><p>Подбираем модель и размер под ваш участок.</p></li>
+      <li class="s-steps__item"><span class="s-steps__n">02</span><h3>Договор</h3><p>Подписываем договор и согласуем состав.</p></li>
+      <li class="s-steps__item"><span class="s-steps__n">03</span><h3>Строительство</h3><p>Строим дом или баню на вашем участке.</p></li>
+      <li class="s-steps__item"><span class="s-steps__n">04</span><h3>Сдача</h3><p>Передаём баню и рассказываем, как ею пользоваться.</p></li>
+    </ol>
+  </section>
+
+  <section class="s-photos s-reveal" aria-label="Фото"><figure><img class="" src="assets/frame.webp" alt="Каркас дома из бруса на свайном фундаменте" loading="lazy" decoding="async" style="object-position:50% 50%"><figcaption>Каркас дома в сборке</figcaption></figure><figure><img class="" src="assets/sauna.webp" alt="Парная из светлого дерева со скамьями" loading="lazy" decoding="async" style="object-position:50% 50%"><figcaption>Парная</figcaption></figure><figure><img class="" src="assets/window.webp" alt="Комната с панорамными окнами и деревянной отделкой" loading="lazy" decoding="async" style="object-position:50% 50%"><figcaption>Комната с панорамными окнами</figcaption></figure></section>
+
+  <section class="s-section s-reveal">
+    <header class="s-section__head"><h2>Что здесь есть</h2></header>
+    <ul class="s-promises">
+      <li><h3>В срок</h3><p>Работаем в оговорённый срок.</p></li>
+      <li><h3>Цена без сюрпризов</h3><p>Не пытаемся менять цену или срок в процессе.</p></li>
+      <li><h3>Баня под усадку</h3><p>Строим бани под усадку, в том числе из бруса.</p></li>
+      <li><h3>Дома на дачу</h3><p>Строим небольшие дома для дачи.</p></li>
+    </ul>
+  </section>
+
+  <section class="s-section s-reveal">
+    <header class="s-section__head s-section__head--reviews"><h2>Отзывы с Яндекс.Карт</h2><p class="s-reviews__rating"><span class="s-reviews__num">4,1</span><span class="s-reviews__stars" style="--r: 4.1" aria-label="рейтинг 4,1 из 5"></span><span class="s-reviews__count">5 отзывов</span><a class="s-reviews__all" href="https://yandex.ru/maps/org/stoyko_stroy/26697230351/reviews/" target="_blank" rel="noopener">Читать все отзывы на Яндекс.Картах</a></p></header>
+    <ul class="s-reviews">
+      <li><blockquote>«Заказали дом на дачу 6×3 и не пожалели! Спасибо огромное ребятам за проделанную работу, дом получился классный! Процветания и побольше довольных клиентов вам! Спасибо!»</blockquote><p class="s-reviews__who">Станислав Ф.</p></li>
+      <li><blockquote>«Заказал у Стройко Строй баню 7,5×5 под усадку. Выполнили работу в срок, без замечаний. Ребята профессионалы в своём деле. Спасибо большое.»</blockquote><p class="s-reviews__who">Дмитрий Калинин</p></li>
+      <li><blockquote>«Отличная работа! Шустро, со знанием дела, без лишних звонков и попыток изменить цену или срок. Профессионалы, да еще и порядочные.»</blockquote><p class="s-reviews__who">Полина Макарова</p></li>
+    </ul>
+    <p class="s-note">Отзывы с карточки на Яндекс.Картах, без правок.</p>
+  </section>
+
+  <section class="s-section s-reveal">
+    <header class="s-section__head"><h2>Частые вопросы</h2></header>
+    <div class="s-faq"><details><summary>Что вы строите?</summary><p>Мы строим дачные дома и бани, в том числе каркасные и под усадку.</p></details><details><summary>Сколько стоит баня?</summary><p>Каркасная баня 6×4 с террасой 2 м стоит 1 450 000 ₽. Для точного расчёта напишите нам или позвоните.</p></details><details><summary>Меняется ли цена в процессе?</summary><p>Мы не пытаемся менять цену или срок: клиенты отмечают это в отзывах.</p></details><details><summary>Когда вы работаете?</summary><p>Мы работаем с понедельника по пятницу с 9:00 до 18:00 (перерыв с 12:00 до 13:00), суббота и воскресенье – выходные. Адрес: Сыктывкар, ул. Куратова, 83, этаж 3, каб. 316.</p></details></div>
+  </section>
+
+  <section class="s-section s-final s-reveal" id="contacts">
+    <header class="s-section__head"><h2>Обсудим проект и рассчитаем смету</h2></header>
+    <div class="s-contacts">
+      <dl>
+        <div><dt>Адрес</dt><dd>ул. Куратова, 83, этаж 3, каб. 316, Сыктывкар</dd></div>
+        <div><dt>Часы</dt><dd>Пн–Пт 9:00–18:00 (перерыв 12:00–13:00), Сб–Вс выходной</dd></div>
+        <div><dt>Телефон</dt><dd><a href="tel:+79042218431">+7 (904) 221-84-31</a></dd></div>
+      </dl>
+      <div class="s-contacts__actions">
+        <a class="s-btn" href="#widget">Рассчитать смету</a>
+        <a class="s-btn s-btn--ghost" data-s-msg="whatsapp" href="#">WhatsApp</a>
+        <a class="s-btn s-btn--ghost" data-vk-btn href="https://vk.ru/stoykostroy" target="_blank" rel="noopener">ВКонтакте</a>
+        
+      </div>
+    </div>
+  </section>
+</main>
+<!-- agent-widget -->
+<a class="agent" href="#widget" aria-label="Написать нам: отвечаем сразу, круглосуточно">
+  <span class="agent__bubble"><b>Отвечаем сразу</b><span>круглосуточно, администратор на связи</span></span>
+  <span class="agent__photo"><img src="assets/agent.webp" alt="" width="64" height="64" loading="lazy"><i aria-hidden="true"></i><b aria-hidden="true">24/7</b></span>
+</a>
+<!-- /agent-widget -->
+<footer class="s-foot"><p>Стойко Строй · Сыктывкар</p><p>Строительство домов и бань</p></footer>
+<nav class="s-dock" aria-label="Быстрая связь"><a class="s-btn" href="#widget">Рассчитать смету</a><a class="s-btn s-btn--ghost" href="tel:+79042218431">Позвонить</a></nav>
+<script src="style.js" defer></script>
+<script>
+  // кружок менеджера прячется, пока на экране форма записи (не наезжает на неё)
+  (function () {
+    var a = document.querySelector('.agent'), w = document.getElementById('widget');
+    if (!a || !w || !('IntersectionObserver' in window)) return;
+    new IntersectionObserver(function (es) { a.classList.toggle('is-away', es[0].isIntersecting); }, { rootMargin: '0px 0px -90px 0px' }).observe(w);
+  })();
+</script>
+</body>
+</html>
